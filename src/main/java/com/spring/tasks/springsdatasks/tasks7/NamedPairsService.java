@@ -1,5 +1,6 @@
 package com.spring.tasks.springsdatasks.tasks7;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -8,6 +9,7 @@ import java.util.Map;
 @Builder
 @Service
 @RequiredArgsConstructor
+@AllArgsConstructor
 public class NamedPairsService {
 
     private NamedPairs namedPairs;
