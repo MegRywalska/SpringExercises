@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import static com.spring.tasks.springsdatasks.tasks7.NamedPairsService.fromNamedPairsService;
+
 @RequiredArgsConstructor
 @RequestMapping("/app/pairs")
 @Controller
@@ -15,6 +17,6 @@ public class NamedPairsController {
 
     @GetMapping("/{name}")
     public NamedPairsService getNamedPairsJSON(@PathVariable final String name){
-        return namedPairsService.getNamedEmptyPairs(name) ;
+        return fromNamedPairsService(namedPairsService.getNamedEmptyPairs(name)) ;
     }
 }

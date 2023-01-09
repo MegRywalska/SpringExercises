@@ -3,7 +3,6 @@ package com.spring.tasks.springsdatasks.task9;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -29,7 +28,7 @@ public class FileDataController {
     }
 
     @PostMapping("")
-    public ResponseEntity postFile(@RequestBody FileDataDTO fileDataDTO){
+    public ResponseEntity<Object> postFile(@RequestBody FileDataDTO fileDataDTO){
         FileDataDTO fileData = fileDataService.saveFile(fileDataDTO);
 
         URI location = ServletUriComponentsBuilder
@@ -44,10 +43,13 @@ public class FileDataController {
     }
 
     @PutMapping("/{id}")
-    public
+    public ResponseEntity putFile(@PathVariable Integer id, FileDataDTO fileDataDTO ) throws SampleException{
+        return fileDataService.updateFile(id, fileDataDTO);
+    }
 
-
-
-
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteFile(@PathVariable Integer id){
+        return fileDataService.deleteFile(id);
+    }
 
 }

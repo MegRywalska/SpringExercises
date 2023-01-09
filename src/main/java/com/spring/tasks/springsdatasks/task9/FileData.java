@@ -13,6 +13,9 @@ public class FileData {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+//    @GeneratedValue
+//    private UUID id;
+
 
     @Column(name = "file_name")
     private String filename;
