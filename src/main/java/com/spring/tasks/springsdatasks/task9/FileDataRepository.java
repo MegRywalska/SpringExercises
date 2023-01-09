@@ -8,7 +8,6 @@ import java.util.List;
 @Repository
 public interface FileDataRepository extends JpaRepository<FileData, Integer> {
 
-    List<Book>
     @Override
     List<FileData> findAll();
 }
