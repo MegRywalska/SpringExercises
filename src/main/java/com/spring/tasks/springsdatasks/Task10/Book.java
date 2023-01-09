@@ -1,4 +1,4 @@
-package Task10;
+package com.spring.tasks.springsdatasks.Task10;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

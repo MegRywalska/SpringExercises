@@ -1,4 +1,4 @@
-package Task10;
+package com.spring.tasks.springsdatasks.Task10;
 
 import lombok.Builder;
 import lombok.RequiredArgsConstructor;

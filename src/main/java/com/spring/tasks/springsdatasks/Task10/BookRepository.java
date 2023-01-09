@@ -1,4 +1,4 @@
-package Task10;
+package com.spring.tasks.springsdatasks.Task10;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
