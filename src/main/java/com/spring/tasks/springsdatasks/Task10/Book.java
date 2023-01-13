@@ -1,9 +1,6 @@
 package com.spring.tasks.springsdatasks.Task10;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 @AllArgsConstructor
@@ -18,6 +15,7 @@ public class Book {
     private Long id;
     private String title;
     private String author;
+    @Column(name = "ISBN")
     private String ISBN;
     private int pagesNum;
 
