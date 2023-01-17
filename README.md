@@ -1,3 +1,3 @@
 # SpringExercises
 
-Simple tasks to practice String and String Boot skills.
+Simple tasks to practice Spring and Spring Boot skills.
